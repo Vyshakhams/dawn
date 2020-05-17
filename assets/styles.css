@@ -24,10 +24,10 @@ a, a:hover, a:visited{
     margin: 0 auto;
 }
 
-div.wrapper > h1{
+div.wrapper > h1 {
     text-align: center;
-    margin: 100px auto;
-    font-size: 2.4em
+    margin: 25px auto;
+    font-size: 3em;
 }
 
 header{
@@ -149,3 +149,17 @@ a.highlight{
     border-radius: 4px;
     margin: 10px 0;
 }
+
+#rcorners1{
+    border-radius: 25px;
+    border: 2px solid #00dba0;
+    padding: 20px;
+    width: 300px;
+    height: 200px;
+}
+
+#articletitle {
+    text-decoration: underline;
+}
+
+

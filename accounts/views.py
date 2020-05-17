@@ -33,3 +33,6 @@ def logout_view(request):
     if request.method == 'POST':
         logout(request)
         return redirect('articles:list')
+
+def contect_us(request):
+    return render(request, 'accounts/contectus.html')

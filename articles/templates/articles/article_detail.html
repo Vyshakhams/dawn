@@ -2,11 +2,23 @@
 {% block content %}
 <div class="article-detail">
     <div class="article">
-        <img src="{{ article.thumb.url }}" />
+        <center>
+               <img src="{{ article.thumb.url }}" width="400px" height="400px"  />
+         </center>
         <h2>{{ article.title }}</h2>
-        <h3>Written by {{ article.author.username }}</h3>
-        <p>{{ article.body }}</p>
+
+
+      <ol>
+       <li> <p> {{ article.body2 }}</p></li>
+       <li><p> {{ article.body3 }}</p></li>
+       <li> <p>{{ article.body4 }}</p></li>
+       <li> <p>{{ article.body5 }}</p></li>
+       <li><p>{{ article.body6 }}</p> </li>
+          
+       </ol>
+
         <p>{{ article.date }}</p>
+        <h3>Written by {{ article.author.username }}</h3>
     </div>
 </div>
 

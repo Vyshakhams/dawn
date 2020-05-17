@@ -11,7 +11,13 @@ def article_list(request):
 def article_detail(request, slug):
     # return HttpResponse(slug)
     article = Article.objects.get(slug=slug)
-    return render(request, 'articles/article_detail.html', { 'article': article })
+    article.body1 = article.body.split("*")
+    article.body2 = article.body1[1]
+    article.body3 = article.body1[2]
+    article.body4 = article.body1[3]
+    article.body5 = article.body1[4]
+    article.body6 = article.body1[5]
+    return render(request, 'articles/article_detail.html', {'article': article})
 
 @login_required(login_url="/accounts/login/")
 def article_create(request):

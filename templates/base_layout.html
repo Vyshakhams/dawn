@@ -3,12 +3,22 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <title>Djangonauts</title>
+        <title>Articles</title>
         <link rel="stylesheet" href="{% static 'styles.css' %}">
     </head>
     <body>
+    <body>
+    <div hidden>
+        <----------------------------------------------------------------------------------->
+                          Hi thanks for comming here!!!
+                      If you are interested in logging error
+                       email me @ vyshakhams444@gmail.com
+                     for every error you will get Assured GIFT :)
+        <----------------------------------------------------------------------------------->
+
+    </div>
         <header class="wrapper">
-            <h1><a href="{% url 'home' %}"><img src="{% static 'logo.png' %}" alt="djangonautic" /></a></h1>
+            <h1><a href="{% url 'home' %}"><img src="{% static 'logo1.jpg' %}" alt="djangonautic" width="200px" height="125px" /></a></h1>
             <nav>
                 <ul>
                     {% if user.is_authenticated %}
@@ -22,6 +32,7 @@
                     {% else %}
                     <li><a href="{% url 'accounts:login' %}">Login</a></li>
                     <li><a href="{% url 'accounts:signup' %}">Signup</a></li>
+                     <li><a href="{% url 'accounts:contectus' %}">About Us</a></li>
                     {% endif %}
                 </ul>
             </nav>
