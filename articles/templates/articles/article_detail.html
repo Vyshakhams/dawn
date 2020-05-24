@@ -1,5 +1,15 @@
 {% extends 'base_layout.html' %}
 {% block content %}
+
+{% if  article.link  %}
+<div class="link">
+
+<h2>hello</h2>
+<a href="{{ article.link }}"> click here </a>
+{% endif %}
+
+</div>
+
 <div class="article-detail">
     <div class="article">
         <center>
